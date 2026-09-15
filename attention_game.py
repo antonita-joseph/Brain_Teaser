@@ -183,9 +183,10 @@ class AttentionGame:
 
         self.current_round += 1
 
-        # Generate random letter A-Z
+        # Generate random letter A-Z 
+        # The vowels are repeated to balance the weightage of occurences
         self.current_letter = random.choice(
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            "AAAABCDEEEEFGHIIIIJKLMNOOOOPQRSTUUUUVWXYZ"
         )
 
         # Generate random number 1-9
